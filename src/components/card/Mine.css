@@ -1,0 +1,170 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Mine container styles */
+.mine-container {
+  width: 90%;
+  max-width: 1200px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.mine-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.mine-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #e0e0e0;
+  border-radius: 5px 5px 0 0;
+  margin-right: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.tab.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.mine-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-image {
+  width: 80%;
+  border-radius: 10px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.card-profit,
+.card-level,
+.card-total-profit {
+  margin-top: 5px;
+}
+
+.mine-footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #e0e0e0;
+  border-radius: 5px 5px 0 0;
+  margin-right: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.footer-tab.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Modal styles */
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 80%;
+  max-height: 80%;
+  overflow: auto;
+}
+
+.modal-content {
+  text-align: center;
+}
+
+.modal-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.modal-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.modal-description {
+  margin-top: 10px;
+}
+
+.modal-profit,
+.modal-total-profit {
+  margin-top: 5px;
+}
+
+.modal-button {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.modal-button:hover {
+  background-color: #45a049;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
